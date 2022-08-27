@@ -173,7 +173,7 @@ bindsym XF86AudioMute exec amixer sset Master toggle
 
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+n exec /usr/bin/nemo
+bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -208,14 +208,14 @@ set $ws10 "10"
 # bind program to workspace and focus to them on startup:
 #assign [class="Xfce4-terminal"] $ws1
 assign [class="(?i)firefox"] $ws2
-assign [class="Nemo"] $ws3
+assign [class="Thunar"] $ws3
 assign [class="Thunderbird"] $ws4
 assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace then the current:
 #for_window [class=Xfce4-terminal] focus
-#for_window [class=(?i)firefox] focus
-for_window [class=Nemo] focus
+for_window [class=(?i)firefox] focus
+for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
 for_window [class=TelegramDesktop] focus
 
